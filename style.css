@@ -1,14 +1,140 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
+    height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.card {
+    background-color: white;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 802px;
+    height: 444px;
+    position: relative;
+}
+
+.illustration {
+    width: 336px;
+    position: relative;
+    overflow: hidden;
+}
+
+.zindex1 {
+    z-index: 1;
+}
+
+.zindex2 {
+    z-index: 2;
+}
+
+.zindex3 {
+    z-index: 3;
+}
+
+.patterndesktop{
+    width: 840px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: -257px;
+}
+
+.illustrationdesktop {
+    width: 410px;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.content {
+    margin-top: 62px;
+    margin-left: 75px;
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titre {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 19px;
+    color: hsl(238, 29%, 16%);
+}
+.question_container {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 16px 0 12.5px 0;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.text_question {
+    color: hsl(240, 6%, 50%);
+    font-size: 1em;
+}
+
+.text_question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.question_active {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+}
+
+.arrow_up {
+    transform: rotate(180deg);
+}
+
+.response {
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-top: 9.6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.boxdesktop {
+    position: absolute;
+    top: 178px;
+    left: -80px;
+    height: 160px;
+}
+
+.boxdesktop>img {
+    height: 100%;
+    width: auto;
+}
 /*Ordinateur*/
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 885px) {
+    .mobile {
+        display: none;
+    }
 
 }
 
 /*Mobile*/
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 884px) {
+    .desktop {
+        display: none;
+    }
 }
